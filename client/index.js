@@ -5,6 +5,9 @@ import App from './components/App';
 import Home from './components/Home';
 import About from './components/About';
 import Faq from './components/Faq';
+import Person from './components/crashtrack/Person';
+import Car from './components/crashtrack/Car';
+import Claim from './components/crashtrack/Claim';
 
 import React from 'react';
 import { render } from 'react-dom';
@@ -16,6 +19,9 @@ render(
       <IndexRoute component={Home} />
       <Route path="about" component={About} />
       <Route path="faq" component={Faq} />
+      <Route path="person" component={Person} />
+      <Route path="car" component={Car} />
+      <Route path="claim" component={Claim} />
     </Route>
   </Router>
   , document.getElementById('root'));
